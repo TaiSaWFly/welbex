@@ -1,0 +1,57 @@
+@import "./colors.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    display: inline-block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $liteText;
+    cursor: pointer;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    display: inline-block;
+    padding: 2.1rem 3.5rem;
+
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $liteText;
+
+    cursor: pointer;
+    background: $blue;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background: $orange;
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

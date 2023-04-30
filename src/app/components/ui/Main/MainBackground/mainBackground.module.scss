@@ -1,0 +1,213 @@
+.red_ball {
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 364px;
+    top: -126px;
+
+    background: radial-gradient(
+        64% 64% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.536) 0%,
+        rgba(212, 93, 93, 0.264) 59.67%,
+        rgba(167, 49, 49, 0.248) 78.59%,
+        rgba(130, 25, 25, 0.248) 100%
+    );
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+
+    animation: move-ball 15s infinite alternate ease-in-out;
+
+    @media (max-width: 1024px) {
+        width: 70px;
+        height: 70px;
+        left: 390px;
+        top: -75px;
+    }
+
+    @media (max-width: 435px) {
+        display: none;
+    }
+}
+
+.purple_ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 710px;
+    top: -210px;
+
+    background: radial-gradient(
+        64% 64% at 27.25% 26.5%,
+        rgba(236, 208, 255, 0.64) 0%,
+        rgba(161, 93, 207, 0.24) 59.67%,
+        rgba(118, 49, 164, 0.208) 78.59%,
+        rgba(86, 24, 128, 0.232) 100%
+    );
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    animation: move-ball 10s infinite alternate ease-in-out;
+
+    @media (max-width: 1024px) {
+        width: 50px;
+        height: 50px;
+        left: 685px;
+        top: -130px;
+    }
+
+    @media (max-width: 800px) {
+        left: 459px;
+        top: 151px;
+    }
+
+    @media (max-width: 435px) {
+        width: 40px;
+        height: 40px;
+
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(236, 208, 255, 0.64) 0%,
+            rgba(161, 93, 207, 0.24) 59.67%,
+            rgba(118, 49, 164, 0.208) 78.59%,
+            rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+
+        left: 266px;
+        top: 185px;
+        z-index: 200;
+    }
+}
+
+.reds_ball {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 413px;
+    bottom: 14px;
+
+    background: radial-gradient(
+        64% 64% at 27.25% 26.5%,
+        rgba(255, 208, 208, 0.48) 0%,
+        rgba(212, 93, 93, 0.248) 59.67%,
+        rgba(167, 49, 49, 0.264) 78.59%,
+        rgba(130, 25, 25, 0.232) 100%
+    );
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    animation: move-ball 6s infinite alternate ease-in-out;
+
+    @media (max-width: 435px) {
+        width: 43px;
+        height: 43px;
+
+        background: radial-gradient(
+            64% 64% at 27.25% 26.5%,
+            rgba(255, 208, 208, 0.536) 0%,
+            rgba(212, 93, 93, 0.264) 59.67%,
+            rgba(167, 49, 49, 0.248) 78.59%,
+            rgba(130, 25, 25, 0.248) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+
+        right: 240px;
+        bottom: -60px;
+        z-index: 200;
+    }
+}
+
+.red_light {
+    width: 311px;
+    height: 311px;
+    background: #961a1a;
+    opacity: 0.5;
+    filter: blur(196px);
+
+    position: absolute;
+    left: -250px;
+    top: 42px;
+
+    @media (max-width: 435px) {
+        width: 211px;
+        height: 210px;
+
+        left: -65px;
+        top: 200px;
+    }
+}
+
+.purple_light {
+    width: 259px;
+    height: 259px;
+    background: #833ab4;
+    opacity: 0.5;
+    filter: blur(196px);
+
+    position: absolute;
+    left: 450px;
+    top: -360px;
+
+    @media (max-width: 800px) {
+        left: 280px;
+        top: -358px;
+    }
+
+    @media (max-width: 435px) {
+        left: 265px;
+        top: 75px;
+    }
+}
+
+.white_light {
+    display: none;
+    width: 320px;
+    height: 445px;
+
+    background: radial-gradient(
+        238.53% 189.02% at 3.2% 3.49%,
+        rgba(255, 246, 233, 0.1) 0%,
+        rgba(26, 29, 35, 0.1) 26.62%,
+        rgba(26, 29, 35, 0.1) 52.1%,
+        rgba(26, 29, 35, 0.01) 70.17%,
+        rgba(26, 29, 35, 0) 100%
+    );
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+
+    position: absolute;
+    left: -50px;
+    top: -50px;
+
+    @media (max-width: 435px) {
+        display: block;
+    }
+}
+
+@keyframes move-ball {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(10%, 15%, 0);
+    }
+    100% {
+        transform: translate3d(40%, 40%, 0);
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../../../styles/colors.scss";
+
+.logo {
+    width: 140px;
+    margin-right: 52px;
+
+    position: relative;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.logo_info {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: $liteText;
+
+    position: absolute;
+    top: 34px;
+    left: 0;
+}

@@ -1,0 +1,164 @@
+@import "../../../../../styles/colors.scss";
+
+.footer {
+    padding: 55px 0 20px 0;
+
+    @media (max-width: 1024px) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: 435px) {
+        padding-bottom: 60px;
+    }
+}
+
+.footer_wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 435px) {
+        margin-bottom: 50px;
+    }
+}
+
+.footer_wrapper__company_info {
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 30px;
+
+        & li {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.footer_wrapper__menus {
+    & ul {
+        display: grid;
+        grid-template-columns: minmax(100px, 145px) minmax(125px, 215px);
+        grid-template-rows: repeat(5, 20px);
+        grid-column-gap: 50px;
+        grid-row-gap: 10px;
+        grid-auto-flow: column;
+
+        & li {
+            margin-bottom: 0;
+
+            @media (max-width: 410px) {
+                &:nth-child(7) {
+                    grid-row-start: 1;
+                    grid-column-start: 2;
+                }
+            }
+        }
+
+        @media (max-width: 410px) {
+            grid-template-rows: 40px repeat(4, 20px);
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.footer_wrapper__contacts {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: $liteText;
+    text-align: right;
+
+    & a {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 20px;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $orange;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        text-align: left;
+    }
+
+    @media (max-width: 435px) {
+        & address {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.footer_wrapper__contacts_social {
+    margin-bottom: 20px;
+
+    & svg {
+        margin-right: 10px;
+        cursor: pointer;
+        fill: $liteText;
+
+        transition: fill 0.2s ease-in-out;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &:hover {
+            fill: $orange;
+        }
+
+        @media (max-width: 768px) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+}
+
+.footer_author {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: right;
+    color: $liteText;
+
+    & * {
+        display: block;
+    }
+
+    & span {
+        margin-bottom: 5px;
+    }
+
+    & a {
+        text-decoration: underline;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    @media (max-width: 435px) {
+        text-align: left;
+    }
+}

@@ -1,0 +1,28 @@
+//@imports
+@import "./colors.scss";
+@import "./styleDefault.scss";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: $liteText;
+
+    background: #0e1014;
+    cursor: default;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkid-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
